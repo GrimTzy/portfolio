@@ -1,32 +1,34 @@
-/* ===== THEME TOGGLE ===== */
-const themeToggle = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme');
+(function initTheme() {
+  const toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
 
-if (savedTheme === 'dark') {
-  document.body.classList.add('dark');
-}
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  const isDark = document.body.classList.contains('dark');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-});
-
-/* ===== REVEAL CARDS ON SCROLL ===== */
-const cards = document.querySelectorAll('.card');
-const cardObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'none';
-      cardObs.unobserve(e.target);
-    }
+  toggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
-}, { threshold: 0.05 });
+})();
 
-cards.forEach(card => {
-  card.style.opacity = '0';
-  card.style.transform = 'translateY(12px)';
-  card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  cardObs.observe(card);
-});
+(function initScrollReveal() {
+  const cards = document.querySelectorAll('.card');
+  if (!cards.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    cards.forEach(card => card.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+
+  cards.forEach(card => observer.observe(card));
+})();

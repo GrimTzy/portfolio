@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio</title>
-<!-- FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- STYLES -->
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rhalf Valencia — BSIT Student & Full-Stack Developer in Training based in SJDM, Bulacan." />
+  <title>Valencia, Rhalf — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <div class="page">
-    <!-- ===== THEME TOGGLE ===== -->
+
+  <!-- ===== THEME TOGGLE ===== -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
-    <span class="theme-icon-sun">☀</span>
-    <span class="theme-icon-moon">☾</span>
+    <span class="theme-icon-sun" aria-hidden="true">☀</span>
+    <span class="theme-icon-moon" aria-hidden="true">☾</span>
   </button>
+
   <!-- ===== HEADER ===== -->
   <header class="profile-header">
     <div class="profile-photo">
-      <img src="profile.gif" alt="Valencia, Rhalf">
+      <img src="profile.gif" alt="Rhalf Valencia profile photo">
     </div>
     <div class="profile-info">
       <h1 class="profile-name">
         Valencia, Rhalf
-        <span class="verified" title="Verified">✓</span>
+        <span class="verified" title="Verified" aria-label="Verified">✓</span>
       </h1>
-      <div class="profile-location">
-        <span class="icon">◎</span> SJDM, Bulacan, Philippines
-      </div>
-      <div class="profile-title">BSIT Student / Full-Stack Developer in Training  </div>
+      <p class="profile-location">
+        <span class="icon" aria-hidden="true">◎</span> SJDM, Bulacan, Philippines
+      </p>
+      <p class="profile-title">BSIT Student / Full-Stack Developer in Training</p>
       <div class="profile-actions">
         <a href="#" class="btn-dark">
-          <span class="icon">▤</span> View Resume
+          <span class="icon" aria-hidden="true">▤</span> View Resume
         </a>
         <a href="mailto:ValenciaRhalf@gmail.com" class="btn-light">
-          <span class="icon">✉</span> Send Email
+          <span class="icon" aria-hidden="true">✉</span> Send Email
         </a>
       </div>
     </div>
   </header>
-  <!-- ===== MAIN GRID ===== -->
+
+  <!-- ===== MAIN GRID (About + Tech Stack | Experience) ===== -->
   <main class="main-grid">
-    <!-- LEFT COLUMN -->
+
+    <!-- Left Column -->
     <div class="col-left">
-      <!-- About Card -->
+
+      <!-- About -->
       <section class="card">
-        <h2 class="card-title"><span class="card-icon">▤</span> About</h2>
+        <h2 class="card-title">
+          <span class="card-icon" aria-hidden="true">◉</span> About
+        </h2>
         <div class="card-body">
-          <p>I am a 3rd-year Bachelor of Science in Information Technology student at STI San Jose Del Monte, passionate about building modern and user-centered digital experiences. I am currently focusing on web development, Mobile Application development.</p>
+          <p>I am a 3rd-year Bachelor of Science in Information Technology student at STI San Jose Del Monte, passionate about building modern and user-centered digital experiences. I am currently focusing on web development and mobile application development.</p>
           <p>I enjoy solving real-world problems through technology — whether by developing systems that improve daily processes or by creating innovative ideas and turning them into functional applications. I am continuously learning, exploring new tools, and enhancing my skills to grow into a professional developer.</p>
         </div>
       </section>
-      <!-- Tech Stack Card -->
+
+      <!-- Tech Stack -->
       <section class="card">
-        <h2 class="card-title"><span class="card-icon">⚗</span> Tech Stack</h2>
+        <h2 class="card-title">
+          <span class="card-icon" aria-hidden="true">⚗</span> Tech Stack
+        </h2>
         <div class="card-body">
           <div class="stack-group">
             <div class="stack-label">Frontend</div>
@@ -111,14 +125,20 @@
           </div>
         </div>
       </section>
+
     </div>
-    <!-- RIGHT COLUMN -->
+
+    <!-- Right Column -->
     <div class="col-right">
-      <!-- Experience Timeline Card -->
+
+      <!-- Experience Timeline -->
       <section class="card">
-        <h2 class="card-title"><span class="card-icon">▤</span> Experience</h2>
+        <h2 class="card-title">
+          <span class="card-icon" aria-hidden="true">▤</span> Experience
+        </h2>
         <div class="timeline">
-            <div class="timeline-item current">
+
+          <div class="timeline-item current">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-row">
@@ -128,6 +148,7 @@
               <div class="timeline-sub">STI San Jose Del Monte</div>
             </div>
           </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -138,6 +159,7 @@
               <div class="timeline-sub">Enterprise ERP System (Laravel + PHP)</div>
             </div>
           </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -148,6 +170,7 @@
               <div class="timeline-sub">Started learning Java — 1st Year College</div>
             </div>
           </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -158,6 +181,7 @@
               <div class="timeline-sub">Work Immersion — Computer Repair Shop</div>
             </div>
           </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -168,6 +192,7 @@
               <div class="timeline-sub">Senior High School — Basic HTML, CSS &amp; JavaScript</div>
             </div>
           </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -178,111 +203,165 @@
               <div class="timeline-sub">ODIN Solutions — Onsite</div>
             </div>
           </div>
-          
+
         </div>
       </section>
+
     </div>
+
   </main>
-  <!-- ===== PROJECTS + CERTIFICATIONS ===== -->
+
+  <!-- ===== PROJECTS + CURRENTLY LEARNING ===== -->
   <section class="two-col-grid">
+
+    <!-- Recent Projects -->
     <div class="card">
-      <h2 class="card-title"><span class="card-icon">▦</span> Recent Projects</h2>
-        <div class="proj-grid">
-    <div class="proj-item">
-      <div class="proj-name">Enterprise ERP System</div>
-      <div class="proj-desc">Full-scale ERP for a real client — HRIS, Inventory, CRM, BI + AI, Geofencing &amp; GPS.</div>
-      <span class="proj-link">in progress</span>
+      <h2 class="card-title">
+        <span class="card-icon" aria-hidden="true">▦</span> Recent Projects
+      </h2>
+      <div class="proj-grid">
+
+        <div class="proj-item">
+          <div class="proj-name">Enterprise ERP System</div>
+          <div class="proj-desc">Full-scale ERP for a real client — HRIS, Inventory, CRM, BI + AI, Geofencing &amp; GPS.</div>
+          <span class="proj-link">in progress</span>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Portfolio Website</div>
+          <div class="proj-desc">My personal portfolio.</div>
+          <a href="https://rv-dev-website-portfolio.vercel.app" target="_blank" rel="noopener" class="proj-link">rv.dev ↗</a>
+        </div>
+
+        <div class="proj-item proj-item--muted">
+          <div class="proj-name">More Coming Soon...</div>
+          <div class="proj-desc">Currently building new projects. Stay tuned!</div>
+          <span class="proj-link">🚧 in the works</span>
+        </div>
+
+      </div>
     </div>
-    <div class="proj-item">
-      <div class="proj-name">Portfolio Website</div>
-     <div class="proj-desc">My personal Portfolio</div>
-      <a href="https://rv-dev-website-portfolio.vercel.app" target="_blank" class="proj-link">rv.dev ↗</a>
-  </div>
-    <div class="proj-item proj-item--muted">
-      <div class="proj-name">More Coming Soon...</div>
-      <div class="proj-desc">Currently building new projects. Stay tuned!</div>
-      <span class="proj-link">🚧 in the works</span>
-    </div>
-  </div>
-    </div>
+
+    <!-- Currently Learning -->
     <div class="card">
-     <h2 class="card-title"><span class="card-icon">◉</span> Currently Learning</h2>
-     <div class="cert-list">
-       <div class="cert-item">
-         <div class="cert-name">Cyber Security</div>
-         <div class="cert-org">Exploring ethical hacking, network security & threat analysis</div>
-       </div>
-       <div class="cert-item">
-         <div class="cert-name">Mobile App Development</div>
-         <div class="cert-org">Building Android apps using Android Studio & Java/Kotlin</div>
-       </div>
-       <div class="cert-item">
-         <div class="cert-name">Always Learning...</div>
-         <div class="cert-org">Continuously expanding skills through projects & self-study</div>
-       </div>
-     </div>
-   </div>
+      <h2 class="card-title">
+        <span class="card-icon" aria-hidden="true">◉</span> Currently Learning
+      </h2>
+      <div class="cert-list">
+
+        <div class="cert-item">
+          <div class="cert-name">Cyber Security</div>
+          <div class="cert-org">Exploring ethical hacking, network security &amp; threat analysis</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Mobile App Development</div>
+          <div class="cert-org">Building Android apps using Android Studio &amp; Java/Kotlin</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Always Learning...</div>
+          <div class="cert-org">Continuously expanding skills through projects &amp; self-study</div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
+
   <!-- ===== GOALS + SOCIAL + CONTACT ===== -->
   <section class="card footer-card">
     <div class="footer-grid">
+
+      <!-- Goals -->
       <div class="footer-col">
-        <h3 class="footer-title"><span class="card-icon">◎</span> Goals</h3>
-        <div class="goal-item">Grow and build a strong career in IT through continuous learning and hands-on experience.</div>
-        <div class="goal-item">Improve my skills in software development and contribute to real-world impactful projects.</div>
+        <h3 class="footer-title">
+          <span class="card-icon" aria-hidden="true">◎</span> Goals
+        </h3>
+        <p class="goal-item">Grow and build a strong career in IT through continuous learning and hands-on experience.</p>
+        <p class="goal-item">Improve my skills in software development and contribute to real-world impactful projects.</p>
       </div>
+
+      <!-- Social Links -->
       <div class="footer-col">
-        <h3 class="footer-title"><span class="card-icon">⚯</span> Social Links</h3>
-        <a href="https://github.com/GrimTzy" target="_blank" rel="noopener" class="social-link"><span class="icon">⌬</span> GitHub</a>
-        <a href="https://www.instagram.com/ryoooheiii_/" target="_blank" rel="noopener" class="social-link"><span class="icon">◉</span> Instagram</a>
-        <a href="https://www.facebook.com/share/1AxND1hb1Z/" target="_blank" rel="noopener" class="social-link"><span class="icon">f</span> Facebook</a>
+        <h3 class="footer-title">
+          <span class="card-icon" aria-hidden="true">⚯</span> Social Links
+        </h3>
+        <a href="https://github.com/GrimTzy" target="_blank" rel="noopener" class="social-link">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="18" height="18" alt="GitHub"> GitHub
+        </a>
+        <a href="https://www.instagram.com/ryoooheiii_/" target="_blank" rel="noopener" class="social-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="18" height="18" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.facebook.com/share/1AxND1hb1Z/" target="_blank" rel="noopener" class="social-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" width="18" height="18" alt="Facebook"> Facebook
+        </a>
       </div>
+
+      <!-- Contact -->
       <div class="footer-col">
-        <h3 class="footer-title"><span class="card-icon">✎</span> Contact</h3>
-        <div class="goal-item">Actively seeking freelance opportunities.</div>
+        <h3 class="footer-title">
+          <span class="card-icon" aria-hidden="true">✎</span> Contact
+        </h3>
+        <p class="goal-item">Actively seeking freelance opportunities.</p>
         <a href="mailto:ValenciaRhalf@gmail.com" class="contact-link">Get in touch →</a>
       </div>
+
+      <!-- Contact Cards -->
       <div class="footer-col contact-cards">
+
         <div class="contact-card">
-          <div class="contact-icon">✉</div>
+          <div class="contact-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="24" height="24" alt="Gmail">
+          </div>
           <div>
             <div class="contact-label">Email</div>
             <div class="contact-value">ValenciaRhalf@gmail.com</div>
           </div>
         </div>
+
         <div class="contact-card">
-          <div class="contact-icon">☏</div>
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="#25D366"/>
+            </svg>
+          </div>
           <div>
             <div class="contact-label">Let's Talk</div>
             <div class="contact-value">0916-625-0633</div>
           </div>
         </div>
-            <a href="https://www.facebook.com/share/1AxND1hb1Z/" target="_blank" rel="noopener" class="contact-card" style="text-decoration:none;">
+
+        <a href="https://www.facebook.com/share/1AxND1hb1Z/" target="_blank" rel="noopener" class="contact-card contact-card--link">
           <div class="contact-icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" width="24" height="24">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" width="24" height="24" alt="Messenger">
           </div>
-         <div>
+          <div>
             <div class="contact-label">Messenger</div>
             <div class="contact-value">Chat with me</div>
           </div>
         </a>
+
       </div>
+
     </div>
   </section>
-    <!-- ===== GALLERY ===== -->
+
   <section class="card">
-    <h2 class="card-title"><span class="card-icon">▤</span> Gallery</h2>
+    <h2 class="card-title">
+      <span class="card-icon" aria-hidden="true">▤</span> Gallery
+    </h2>
     <div class="gallery-marquee">
       <div class="gallery-track">
-        <!-- First set -->
-        <div class="gallery-item"><img src="Gallery1.jpg" alt="Photo 1"></div>
-        <div class="gallery-item"><img src="Gallery2.jpg" alt="Photo 2"></div>
-        <div class="gallery-item"><img src="Gallery3.jpg" alt="Photo 3"></div>
-        <div class="gallery-item"><img src="Gallery4.jpg" alt="Photo 4"></div>
-        <div class="gallery-item"><img src="Gallery5.jpg" alt="Photo 5"></div>
-        <div class="gallery-item"><img src="Gallery6.jpg" alt="Photo 6"></div>
-        <div class="gallery-item"><img src="Gallery7.jpg" alt="Photo 7"></div>
-        <!-- Duplicate set for seamless loop -->
+        
+        <div class="gallery-item"><img src="Gallery1.jpg" alt="Gallery photo 1"></div>
+        <div class="gallery-item"><img src="Gallery2.jpg" alt="Gallery photo 2"></div>
+        <div class="gallery-item"><img src="Gallery3.jpg" alt="Gallery photo 3"></div>
+        <div class="gallery-item"><img src="Gallery4.jpg" alt="Gallery photo 4"></div>
+        <div class="gallery-item"><img src="Gallery5.jpg" alt="Gallery photo 5"></div>
+        <div class="gallery-item"><img src="Gallery6.jpg" alt="Gallery photo 6"></div>
+        <div class="gallery-item"><img src="Gallery7.jpg" alt="Gallery photo 7"></div>
+        
         <div class="gallery-item" aria-hidden="true"><img src="Gallery1.jpg" alt=""></div>
         <div class="gallery-item" aria-hidden="true"><img src="Gallery2.jpg" alt=""></div>
         <div class="gallery-item" aria-hidden="true"><img src="Gallery3.jpg" alt=""></div>
@@ -293,10 +372,13 @@
       </div>
     </div>
   </section>
+
   <footer class="page-footer">
     © 2026 Valencia, Rhalf — All rights reserved.
   </footer>
+
 </div>
+
 <script src="script.js" defer></script>
 </body>
 </html>
